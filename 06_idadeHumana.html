@@ -8,9 +8,16 @@
     // - cães grandes: fator 7.
 
     //Entrada
+    let idade = Number(prompt("Informe a idade do seu cão").trim().replace(",", "."));
+    let porte =  prompt("informe o porte do seu cão ns seguintes fatores: Porte Pequeno = fator 5; Porte Médio = fator 6; Porte Grande = fator 7").trim().toLowerCase();
 
 
     //Processamento
+    (porte === "fator 5")? alert(`${idade * 5}, essa é a idade humana do cão`)
+    : (porte === "fator 6")? alert(`${idade * 6}, essa é a idade humana do cão`)
+    :(porte === "fator 7")? alert(`${idade * 7}, essa é a idade humana do cão`)
+    : alert(`Valor Invalido!`)
+
 
     
     //Saída
