@@ -8,9 +8,15 @@
     // Apresente o salário final recebido pelo funcionário semanalmente e o preço de cada hora trabalhada.
 
     //Entrada
+    let horas = Number (prompt ("Informe quantas horas trabalha semanalmente").replace(",", "."));
+    let salario = Number(prompt("Informe seu salário").replace(",", "."));
 
 
     //Processamento
+    (horas <= 45) ? alert(`Seu salário continuará sendo de R$${salario} e está ganhando R$${salario/60} por hora`.replace(".", ","))
+    : (horas >45 && horas <=65)? alert(`Seu salário será de R$${salario*1.2} e está ganhando R$${(salario*1.2)/60.} por hora`.replace(".", ","))
+    : (horas >60) ? alert (`Seu salário será de R$${salario*1.3} e está ganhando R$${(salario*1.3)/60} por hora`.replace(".", ","))
+    : alert (`Valores Inválidos!`)
 
     
     //Saída
