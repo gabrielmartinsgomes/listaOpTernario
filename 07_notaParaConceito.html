@@ -10,15 +10,15 @@
     // Entre 5.9 e zero            E
 
     //Entrada
-    const nota = Number (prompt("Diga a sua nota, de 0 a 10, na última prova").replace(",", "."))
+    const nota= Number(prompt("Diga a sua nota, de 0 a 10, na última prova").replace(",", ".").trim());
 
 
     //Processamento
-    (10 >= nota >= 9) ? alert("Sua nota conceito é A")
-    : (8.99>= nota >= 8)? alert("A sua nota conceito é B")
-    : (7.99>= nota >= 7)? alert("A sua nota conceito é C")
-    : (6.99>= nota >= 6)? alert("A sua nota conceito é D")
-    : (5.99>= nota >= 0)? alert("A sua nota conceito é E")
+    ( 8.9 <=nota && nota <= 10 ) ? alert("Sua nota conceito é A")
+    : (7.9<nota && nota<9 )? alert("A sua nota conceito é B")
+    : (6.9<nota && nota<8 )? alert("A sua nota conceito é C")
+    : (5.9<nota && nota<7 )? alert("A sua nota conceito é D")
+    : (0<nota && nota<6 )? alert("A sua nota conceito é E")
     : alert("Valores Inválidos!");
 
     
