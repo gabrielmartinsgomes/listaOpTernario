@@ -2,23 +2,23 @@
 <script>
     //Problema: Aumento de Preço
     //Recebe o preço do produto e calcula o aumento do preço, baseado no seguinte critério:
-        //- até 280(inclusive): aumento de 20 %
-        //- até 700(inclusive): aumento de 15 %
-        //- até 1500(inclusive): aumento de 10 %
-        //- acima de 1500: aumento de 5 %
-    
+    //- até 280(inclusive): aumento de 20 %
+    //- até 700(inclusive): aumento de 15 %
+    //- até 1500(inclusive): aumento de 10 %
+    //- acima de 1500: aumento de 5 %
+
     //Entrada
     let preco = Number(prompt("Informe o preço de um produto").replace(",", "."));
 
 
     //Processament
-    (preco <= 280) ? alert(`${preco*1.2 .toFixed(2)} é o novo preço do produto, tendo um aumento de 20%`.replace(".", ","))
-    : (preco <= 700) ? alert (`${preco*1.15.toFixed(2)} é o novo preço do produto, tendo um aumento de 15%`.replace(".", ","))
-    : (preco <= 1500) ? alert (`${preco*1.1.toFixed(2)} é o novo preço do produto, tendo um aumento de 10%`.replace(".", ","))
-    : (preco > 1500) ? alert (`${preco*1.05.toFixed(2)} é o novo preço do produto, tendo um aumento de 5%`.replace(".", ","))
-    : alert(`Valor Invalido!`)
+    (preco <= 280) ? alert(`${preco * 1.2.toFixed(2)} é o novo preço do produto, tendo um aumento de 20%`.replace(".", ","))
+        : (preco <= 700) ? alert(`${preco * 1.15.toFixed(2)} é o novo preço do produto, tendo um aumento de 15%`.replace(".", ","))
+            : (preco <= 1500) ? alert(`${preco * 1.1.toFixed(2)} é o novo preço do produto, tendo um aumento de 10%`.replace(".", ","))
+                : (preco > 1500) ? alert(`${preco * 1.05.toFixed(2)} é o novo preço do produto, tendo um aumento de 5%`.replace(".", ","))
+                    : alert(`Valor Invalido!`)
 
-    
+
     //Saída
 
 </script>

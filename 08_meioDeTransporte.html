@@ -6,18 +6,19 @@
     // Verifique qual é o meio de transporte mais barato e apresente em tela, especificando quanto custará para ir e voltar do trabalho diariamente.
 
     //Entrada
-    let preco = Number (prompt("Informe o preço da gasolina").replace(",", "."));
-    let litros = Number (prompt("Informe quantos litros você utiliza para ir diariamente ao seu local de trabalho").replace(",", "."));
+    let preco = Number(prompt("Informe o preço da gasolina").replace(",", "."));
+    let litros = Number(prompt("Informe quantos litros você utiliza para ir diariamente ao seu local de trabalho").replace(",", "."));
     let onibus = Number(prompt("Qual o custo do transporte público para você chegar ao seu local de trabalho?").replace(",", "."));
 
 
     //Processamento
-    let gasosa = litros*preco;
-    (onibus > gasosa) ? alert(`Ir de carro seria uma opção melhor, já que o transporte público custa R$${onibus.toFixed(2)} enquanto o carro custa R$${gasosa.toFixed(2)} para se locomover até o local de trabalho`.replace(".", ","))
-    : (gasosa>onibus)  ? alert(`Ir de ônibus seria uma opção melhor, já que o transporte público custa R$${onibus.toFixed(2)} enquanto o carro custa R$${gasosa.toFixed(2)} para se locomover até o local de trabalho`.replace(".", ","))
-    : alert(`Valores Inválidos!`);
-    
+    let gasosa = litros * preco;
+    (onibus > gasosa) ? alert(`Ir de carro seria uma opção melhor, já que o transporte público custa R$${onibus.toFixed(2)} enquanto o carro custa R$
+    ${gasosa.toFixed(2)} para se locomover até o local de trabalho`.replace(".", ","))
+        : (gasosa > onibus) ? alert(`Ir de ônibus seria uma opção melhor, já que o transporte público custa R$${onibus.toFixed(2)} enquanto o carro custa R$${gasosa.toFixed(2)} para se locomover até o local de trabalho`.replace(".", ","))
+            : alert(`Valores Inválidos!`);
+
     //Saída
 
-    
+
 </script>

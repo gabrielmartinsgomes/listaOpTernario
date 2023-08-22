@@ -4,16 +4,17 @@
     //Construa um algoritmo que leia dois números inteiros. Verifique qual dos dois números é maior e o escreva.
 
     //Entrada
-    const numUm = parseInt (prompt(`Informe um número inteiro`).trim())
-    const numDois =  parseInt (prompt(`Informe um número inteiro`).trim())
+    const numUm = parseInt(prompt(`Informe um número inteiro`).trim())
+    const numDois = parseInt(prompt(`Informe um número inteiro`).trim())
 
-    
+
     //Processamento
     let mensagemFinal = ``;
-    (numUm > numDois || numDois > numUm) ? mensagemFinal += `${numUm} é maior que ${numDois}` : mensagemFinal += `${numDois} é maior que ${numUm}`;
+    (numUm > numDois || numDois > numUm) ? mensagemFinal += `${numUm} é maior que ${numDois}`
+        : mensagemFinal += `${numDois} é maior que ${numUm}`;
 
-    
+
     //Saída
-    alert( mensagemFinal)
-    
+    alert(mensagemFinal)
+
 </script>
